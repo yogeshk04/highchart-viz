@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Chart } from 'angular-highcharts';
+// import { Chart } from 'highcharts';
+import { donutChart } from './helpers/donutChart';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'highchart-viz';
+  donutChart = new Chart(donutChart);
 }
