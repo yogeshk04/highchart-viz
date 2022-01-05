@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Chart } from 'angular-highcharts';
 // import { Chart } from 'highcharts';
 import { donutChart } from './helpers/donutChart';
+import { areaChart } from './helpers/areaChart';
+import { barChart } from './helpers/barChart';
+import { oneLineChart } from './helpers/oneLineChart';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +13,7 @@ import { donutChart } from './helpers/donutChart';
 })
 export class AppComponent {
   donutChart = new Chart(donutChart);
+  areaChart = new Chart(areaChart);
+  barChart = new Chart(barChart);
+  oneLineChart = new Chart(oneLineChart);
 }
